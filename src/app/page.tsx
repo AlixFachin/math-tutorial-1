@@ -14,8 +14,8 @@ const subPagesList: LessonRef[] = [
     },
     {
         href: 'lesson2',
-        title: 'Line going through two points',
-        ready: false,
+        title: 'Basic about Coordinates (other v)',
+        ready: true,
     },
 ];
 
