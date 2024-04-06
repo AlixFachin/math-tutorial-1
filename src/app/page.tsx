@@ -27,7 +27,10 @@ export default function Home() {
             {subPagesList.map((lessonRef, index) => {
                 if (lessonRef.ready) {
                     return (
-                        <div className="mb-4 rounded-sm p-4 shadow-sm">
+                        <div
+                            className="mb-4 rounded-sm p-4 shadow-sm"
+                            key={`lesson-${index}`}
+                        >
                             <h2 className="text-3xl text-gray-700 transition-all hover:text-4xl">
                                 <Link href={lessonRef.href}>
                                     {lessonRef.title}
@@ -37,7 +40,10 @@ export default function Home() {
                     );
                 }
                 return (
-                    <div className="mb-4 rounded-sm p-4 shadow-sm">
+                    <div
+                        className="mb-4 rounded-sm p-4 shadow-sm"
+                        key={`subPage-${index}`}
+                    >
                         <h2 className="text-3xl text-gray-600">
                             {lessonRef.title}(WIP)
                         </h2>
